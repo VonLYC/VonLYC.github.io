@@ -26,6 +26,10 @@ github_username:    VonLYC
 #twitter_username:   qiubaiying
 
 
+plugins:
+  - jekyll-seo-tag
+
+
 
 
 # Build settings
