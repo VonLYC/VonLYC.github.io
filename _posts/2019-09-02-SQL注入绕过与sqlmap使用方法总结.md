@@ -1,7 +1,7 @@
 ---
 layout:     post                    # 使用的布局（不需要改）
 title:      SQL注入绕过与sqlmap使用方法总结               # 标题 
-subtitle:   Challenges #副标题
+subtitle:    #副标题
 date:       2019-09-02              # 时间
 author:     Von                      # 作者
 header-img: img/post-bg-android.jpg    #这篇文章标题背景图片
