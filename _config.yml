@@ -69,10 +69,10 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: ff22566f9426862ef6c8                            #生成的clientID
   clientSecret: c04c81f6db80f890cf38cd65bed298525aeaaa87    #生成的clientSecret
-  repo: VonLYC.github.io    #仓库名称
+  repo: issue    #仓库名称
   owner: VonLYC    #github用户名
   admin: VonLYC
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  distractionFreeMode: false #是否启用类似FB的阴影遮罩
 
 
 # 统计
