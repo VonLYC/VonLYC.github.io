@@ -60,19 +60,19 @@ kramdown:
 
 
 
- 评论系统
- Disqus（https://disqus.com/）
- disqus_username: V0n
+ #评论系统
+ #Disqus（https://disqus.com/）
+ #disqus_username: V0n
 
-# Gitalk
-#gitalk:
-#  enable: true    #是否开启Gitalk评论
-#  clientID:          6c1a55525b29dba3d057 #生成的clientID
-#  clientSecret:  ca45f222ae4c592a1ca7761013f8aff3218c92a4   #生成的clientSecret
-#  repo: VonLYC.github.io    #仓库名称
-#  owner: VonLYC    #github用户名
-#  admin: VonLYC
-#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+ Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID:          6c1a55525b29dba3d057 #生成的clientID
+  clientSecret:  ca45f222ae4c592a1ca7761013f8aff3218c92a4   #生成的clientSecret
+  repo: VonLYC.github.io    #仓库名称
+  owner: VonLYC    #github用户名
+  admin: VonLYC
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
