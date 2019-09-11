@@ -67,8 +67,8 @@ kramdown:
  Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID:          6c1a55525b29dba3d057 #生成的clientID
-  clientSecret:  ca45f222ae4c592a1ca7761013f8aff3218c92a4   #生成的clientSecret
+  clientID:          188d078307846f4b8d9a #生成的clientID
+  clientSecret:  fc8e284b5ad63d2a27fd0018613ed06b84b6023f   #生成的clientSecret
   repo: VonLYC.github.io    #仓库名称
   owner: VonLYC    #github用户名
   admin: VonLYC
