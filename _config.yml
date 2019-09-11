@@ -64,7 +64,7 @@ kramdown:
  #Disqus（https://disqus.com/）
  #disqus_username: V0n
 
- Gitalk
+# Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
   clientID:          188d078307846f4b8d9a #生成的clientID
