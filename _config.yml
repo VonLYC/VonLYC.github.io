@@ -17,7 +17,7 @@ sidebar-about-description: "Goals determine what you going to be!"
 
 
 # SNS settings
-RSS: false
+RSS: true
 # weibo_username:     qiubaiying
 # zhihu_username:     qiubaiying
 github_username:    VonLYC
@@ -60,9 +60,9 @@ kramdown:
 
 
 
-# 评论系统
-# Disqus（https://disqus.com/）
-# disqus_username: V0n
+ 评论系统
+ Disqus（https://disqus.com/）
+ disqus_username: V0n
 
 # Gitalk
 #gitalk:
