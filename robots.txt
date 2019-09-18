@@ -1,1 +1,9 @@
-Sitemap: https://www.v0n.top/sitemap.xml
+# Group 1
+User-agent: Googlebot
+Allow: /
+
+# Group 2
+User-agent: *
+Allow: /
+
+Sitemap: https://www.v0.com/sitemap.xml
