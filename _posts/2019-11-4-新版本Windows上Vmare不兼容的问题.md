@@ -23,9 +23,9 @@ tags:                               #标签
 
 打开文件后，在System Database-Applications里面找到VMware开头的选项。  
 将所有有HARDBLOCK提示的程序执行Disable Entry。
-![](/img/VM1)
-![](/img/VM2)
-![](/img/VM3)
+![](/img/VM1.png)
+![](/img/VM2.png)
+![](/img/VM3.png)
 如此VMware便可以重新运行了。
 
 
