@@ -1,9 +1,9 @@
----
+*---
 
 layout:     post                    # 使用的布局（不需要改）
 title:      新版本Windows上Vmware不兼容的问题               # 标题 
 subtitle:    #副标题
-date:       2019-11-2              # 时间
+date:       2019-11-4              # 时间
 author:     Von                      # 作者
 header-img: img/ios10.jpg
 catalog: true                       # 是否归档
