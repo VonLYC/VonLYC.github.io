@@ -22,4 +22,12 @@ tags:                               #标签
 [链接](https://pan.baidu.com/s/14KukZLG8TjdVNIB16j8QwQ)  提取码：ri9z 
 
 打开文件后，在System Database-Applications里面找到VMware开头的选项。  
-将所有有
+将所有有HARDBLOCK提示的程序执行Disable Entry。
+![](/img/VM1.png)
+![](/img/VM2.png)
+![](/img/VM3.png)
+如此VMware便可以重新运行了。
+
+
+
+
