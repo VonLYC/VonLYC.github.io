@@ -5,7 +5,7 @@ title:      create_function()注入               # 标题
 subtitle:    #副标题
 date:       2020-01-07              # 时间
 author:     Von                      # 作者
-header-img: img/post-bg-mma-0.jpg
+header-img: img/post-bg-mma-0.png
 catalog: true                       # 是否归档
 tags:                               #标签
     - Web
