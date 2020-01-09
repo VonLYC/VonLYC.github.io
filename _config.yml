@@ -121,5 +121,8 @@ friends: [
      },{
         title: "Wal1et",
         href: "http://39.105.105.208"
+     },{
+        title:"nope",
+        href:"https://nopech.cn/"
      }
 ]
