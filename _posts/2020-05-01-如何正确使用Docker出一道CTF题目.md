@@ -23,12 +23,12 @@ tags:                               #标签
 **3.** 移入相关的源码，构建容器里面的环境配置
 在第一篇文章中，我们第三步里面需要进行的操作只有把源码移入/var/www/html文件夹里面而已，但如果环境配置较为复杂，比如需要构建数据库，安装各种插件等，第三步需要的时间就太长了。如果我们改变下上面的步骤。变成：  
 **1.** 指定使用的镜像  
-**2.** 配置相关的环境，移入相关的代码
+**2.** 配置相关的环境，移入相关的代码  
 **3.** 根据第二步的内容，把这些操作以类似于代码，程序的模式写入一个模板，让Docker根据这个模板来生成新的镜像  
 **4.** 根据这个新的镜像来生成新的容器  
 如果是这么操作的话，带来的好处就是可以方便的构造出一个针对性的镜像。配置题目的时候，我们只需要根据这个我们创作的模板生成特制的镜像，直接按照这个镜像就可以直接生成环境了。这个需要的模板就是Dockerfile。  
 我们以0ctf的一道题目的[Dockerfile](https://github.com/CTFTraining/0ctf_2016_unserialize/blob/9c624fad8b7dd380b0e653a1f67cadef741db6c9/Dockerfile)为例来看一下基本Dockerfile的构成和语句
-``` dockerfile
+``` 
 FROM php:5.6-fpm-alpine
 
 COPY files /tmp/
@@ -168,7 +168,7 @@ export FLAG=not_flag
 FLAG=not_flag
 ```
 修改Dockerfile
-```dockerfile
+```
 FROM php:5.6-fpm-alpine
 
 LABEL Author="Virink <virink@outlook.com>"
@@ -215,7 +215,7 @@ docker-compose up -d
 从上面的过程中，我们看到对于一道题目来说，除了源码以外，最大的不方便之处就是还要有相关的nginx文件配置，在这里我推荐virink写的[base_image_nginx_mysql_php_56](https://github.com/CTFTraining/base_image_nginx_mysql_php_56)来辅助我们快速出题。
 这个镜像主要好在不需要我们去配置其他的nginx设置，而且还支持自动导入db.sql文件,支持自动执行flag.sh文件。以我在minil出的一道题为例。题目中主要是需要配置数据库.  
 我们只需要src文件夹中放入源码、flag.sh、db.sql(flag.sh、db.sql文件名不能变)，现在我们dockerfile只需要这么写:
-```dockerfile
+```
 FROM ctftraining/base_image_nginx_mysql_php_56
 
 COPY src /var/www/html
