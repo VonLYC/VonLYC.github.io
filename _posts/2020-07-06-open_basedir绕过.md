@@ -96,7 +96,8 @@ symlink()对于已有的target建立一个名为link的符号连接。
 - symlink (string \$target,string \$link) symlink()对于已有的 target(一般情况下受限于open_basedir)建立一个名为link的符号连接。
 - 成功时返回TRUE， 或者在失败时返回FALSE。
 示例用法如下:
-```php
+
+``` php
 <?php
 $target = 'uploads.php';
 $link = 'uploads';
@@ -135,9 +136,9 @@ system('cat exp');
 **2.** 接着symlink("a/b/c/d","Von")创建了一个符号文件Von,指向了a/b/c/d  
 **3.** 接着symlink("Von/../../../../etc/passwd","exp"),由于此时Von仍然是一个符号文件,所以等价于symlink("a/b/c/d/../../../../etc/passwd","exp"),由于此时a/b/c/d/../../../../的结果等于/var/www/html,符合open_basedir的限制,因此软链接可以被成功建立  
 **4.** 但是之后我们删除了Von这个软链接，并且建立了一个真实的文件夹Von,所以此时上面symlink("Von/../../../../etc/passwd","exp")中的Von不再是软链接而是一个真实的目录。从而达到跨目录访问的效果。
-
 其实到了这一步，我们直接访问根目录下的exp文件能得到结果，我上面是为了让结果直观展示出来才利用使用了system('cat exp')来得到结果。(一般情况下system()是被禁的)
 ![](/blog_img/open_basedi_10.png)
+给出两个大神的POC
 ```php
 <?php
 /*
